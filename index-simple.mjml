@@ -76,12 +76,12 @@
 			}
 
 			@media only screen and (max-width: 639px) {
-				.text-h1 { font-size: 32px !important; }
-				.text-h2 { font-size: 24px !important; }
-				.text-h3 { font-size: 20px !important; }
-				.text-body-lg { font-size: 18px !important; }
-				.text-body { font-size: 16px !important; }
-				.text-kicker { font-size: 12px !important; letter-spacing: 4px !important; }
+				.text-h1, .text-h1 div, .text-h1 p, .text-h1 span, .text-h1 a { font-size: 32px !important; }
+				.text-h2, .text-h2 div, .text-h2 p, .text-h2 span, .text-h2 a { font-size: 24px !important; }
+				.text-h3, .text-h3 div, .text-h3 p, .text-h3 span, .text-h3 a { font-size: 20px !important; }
+				.text-body-lg, .text-body-lg div, .text-body-lg p, .text-body-lg span, .text-body-lg a { font-size: 18px !important; }
+				.text-body, .text-body div, .text-body p, .text-body span, .text-body a { font-size: 16px !important; }
+				.text-kicker, .text-kicker div, .text-kicker p, .text-kicker span, .text-kicker a { font-size: 12px !important; letter-spacing: 4px !important; }
 			}
 		</mj-style>
 
