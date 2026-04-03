@@ -24,7 +24,7 @@
 				align="center"
 			></mj-button>
 
-			<!-- Text style classes (css-class provides responsive sizing via media query) -->
+			<!-- Text style classes -->
 			<mj-class name="kicker" font-size="14px" font-weight="700" letter-spacing="9px" line-height="121%" text-transform="uppercase" padding-bottom="12px"></mj-class>
 			<mj-class name="h1" font-size="50px" line-height="130%" padding-bottom="16px"></mj-class>
 			<mj-class name="h2" font-size="45px" line-height="129%" padding-bottom="12px"></mj-class>
@@ -131,7 +131,7 @@
 		<!-- Intro text + CTA -->
 		<mj-section background-color="#fffffe" padding="32px" text-align="center">
 			<mj-column background-color="#fffffe" vertical-align="top" width="576px">
-				<mj-text mj-class="body centered" padding-bottom="32px">
+				<mj-text mj-class="body centered" css-class="text-body" padding-bottom="32px">
 					<p>Friend,</p>
 					<p>It&rsquo;s important to remember to look out for toxic pesticide residues. From apples to pears and kale to spinach, <span class="link-green">EWG's Shopper&rsquo;s Guide to Pesticides in Produce&TRADE;</span> found more than 75% of non-organic produce contains harmful pesticide residues, even after thorough washing!</p>
 					<p>Shop smarter and avoid pesticides with EWG's Dirty Dozen&TRADE; list of fruits and vegetables. We recommend you buy organic when possible to reduce your exposure to toxic pesticides. Learn more below.</p>
@@ -150,10 +150,10 @@
 			<mj-section background-color="#203a3b" padding="16px 20px">
 				<mj-column padding="0px 0px 38px 0px" width="600px">
 					<mj-spacer height="4px" padding-bottom="12px"></mj-spacer>
-					<mj-text mj-class="kicker centered white">
+					<mj-text mj-class="kicker centered white" css-class="text-kicker">
 						<p>Placeholder Kicker</p>
 					</mj-text>
-					<mj-text mj-class="h2 centered white">
+					<mj-text mj-class="h2 centered white" css-class="text-h2">
 						<p>Placeholder H2</p>
 					</mj-text>
 					<mj-spacer height="8px" padding-bottom="12px"></mj-spacer>
@@ -167,10 +167,10 @@
 			<mj-section background-color="#203a3b" padding="16px 20px">
 				<mj-column padding="0px 0px 38px 0px" width="600px">
 					<mj-spacer height="4px" padding-bottom="12px"></mj-spacer>
-					<mj-text mj-class="kicker centered white">
+					<mj-text mj-class="kicker centered white" css-class="text-kicker">
 						<p>Placeholder Kicker</p>
 					</mj-text>
-					<mj-text mj-class="h2 centered white">
+					<mj-text mj-class="h2 centered white" css-class="text-h2">
 						<p>Placeholder H2</p>
 					</mj-text>
 					<mj-spacer height="8px" padding-bottom="12px"></mj-spacer>
@@ -189,13 +189,13 @@
 			<mj-section background-color="#203a3b" padding="16px 20px">
 				<mj-column width="600px">
 					<mj-spacer height="4px" padding-bottom="12px"></mj-spacer>
-					<mj-text mj-class="kicker centered white">
+					<mj-text mj-class="kicker centered white" css-class="text-kicker">
 						<p>Placeholder Kicker</p>
 					</mj-text>
-					<mj-text mj-class="h3 centered white">
+					<mj-text mj-class="h3 centered white" css-class="text-h3">
 						<p>H3. Lorem ipsum dolor sit amet consectetur. Ipsum metus nibh.</p>
 					</mj-text>
-					<mj-text mj-class="body-lg centered white">
+					<mj-text mj-class="body-lg centered white" css-class="text-body-lg">
 						<p>Placeholder body copy large</p>
 					</mj-text>
 					<mj-spacer height="8px"></mj-spacer>
@@ -223,10 +223,10 @@
 		<!-- Hero: background image with centered content -->
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/90854d9bf2800356b1fbefd385fdfa96.jpg" padding="48px 0px 260px 0px" text-align="center">
 			<mj-column vertical-align="top" width="100%" padding="24px">
-				<mj-text mj-class="kicker centered black">
+				<mj-text mj-class="kicker centered black" css-class="text-kicker">
 					<p>SHOULD THE FDA</p>
 				</mj-text>
-				<mj-text mj-class="h3 centered black" padding-bottom="16px">
+				<mj-text mj-class="h3 centered black" css-class="text-h3" padding-bottom="16px">
 					<p>Lorem ipsum dolor sit amet consectetur. Vulputate fermentum interdum in at neque.</p>
 				</mj-text>
 				<mj-spacer height="8px" padding-bottom="16px"></mj-spacer>
@@ -238,16 +238,16 @@
 		<!-- Two-column: text left, image right -->
 		<mj-section background-color="#fffffe" padding="16px 0px">
 			<mj-column width="320px" padding="24px">
-				<mj-text mj-class="kicker green" align="left" padding-bottom="8px">
+				<mj-text mj-class="kicker green" css-class="text-kicker" align="left" padding-bottom="8px">
 					<p>NEW YEAR</p>
 				</mj-text>
 				<mj-text mj-class="h1" css-class="text-h2" align="left" font-size="40px" padding-bottom="8px">
 					<p>Placeholder Header Three</p>
 				</mj-text>
-				<mj-text mj-class="green" align="left" font-size="25px" font-weight="700" line-height="128%" padding-bottom="8px">
+				<mj-text mj-class="green" css-class="text-body-lg" align="left" font-size="25px" font-weight="700" line-height="128%" padding-bottom="8px">
 					<p>Lorem ipsum dolor sit amet consectetur</p>
 				</mj-text>
-				<mj-text mj-class="body" align="left" color="#565450" padding-bottom="8px">
+				<mj-text mj-class="body" css-class="text-body" align="left" color="#565450" padding-bottom="8px">
 					<p>Support EWG's work and receive our Sustainable Swaps gift box as a thank-you.</p>
 				</mj-text>
 				<mj-spacer height="16px" padding-bottom="8px"></mj-spacer>
@@ -261,10 +261,10 @@
 		<!-- Hero: background image, content left -->
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/f3ab6181347f22cd31c1b3a1ac2ef85d.jpg" padding="160px 0px">
 			<mj-column width="50%" padding="24px">
-				<mj-text mj-class="kicker" align="left">
+				<mj-text mj-class="kicker" css-class="text-kicker" align="left">
 					<p>EWG&rsquo;s Guide to</p>
 				</mj-text>
-				<mj-text mj-class="h1" align="left">
+				<mj-text mj-class="h1" css-class="text-h1" align="left">
 					<p>Placeholder example</p>
 				</mj-text>
 				<mj-spacer height="8px" padding-bottom="16px"></mj-spacer>
@@ -278,10 +278,10 @@
 		<!-- Hero: background image, content left (variant) -->
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/f3ab6181347f22cd31c1b3a1ac2ef85d.jpg" padding="30px 0px 290px 0px">
 			<mj-column vertical-align="top" width="50%" padding="24px">
-				<mj-text mj-class="kicker green" align="left">
+				<mj-text mj-class="kicker green" css-class="text-kicker" align="left">
 					<p>EWG&rsquo;s Guide to</p>
 				</mj-text>
-				<mj-text mj-class="h1" align="left">
+				<mj-text mj-class="h1" css-class="text-h1" align="left">
 					<p>Placeholder example</p>
 				</mj-text>
 				<mj-spacer height="8px" padding-bottom="16px"></mj-spacer>
@@ -297,10 +297,10 @@
 			<mj-section padding="16px 20px">
 				<mj-column width="600px">
 					<mj-spacer height="4px" padding-bottom="12px"></mj-spacer>
-					<mj-text mj-class="kicker centered white">
+					<mj-text mj-class="kicker centered white" css-class="text-kicker">
 						<p>Placeholder Kicker</p>
 					</mj-text>
-					<mj-text mj-class="h2 centered white">
+					<mj-text mj-class="h2 centered white" css-class="text-h2">
 						<p>Placeholder title for header two spanning multiple rows</p>
 					</mj-text>
 					<mj-spacer height="8px"></mj-spacer>
@@ -323,7 +323,7 @@
 		<!-- Hero: background image, centered headline + CTA -->
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/5875a0c66fa6021a789bfa45c2559390.jpg" padding="16px 0px 380px 0px" text-align="center">
 			<mj-column vertical-align="top" width="100%" padding="24px">
-				<mj-text mj-class="h3 centered" font-size="30px" padding-bottom="24px">
+				<mj-text mj-class="h3 centered" css-class="text-h3" font-size="30px" padding-bottom="24px">
 					<p>Trump administration backs Bayer in Supreme Court fight, putting corporate interests over Roundup victims</p>
 				</mj-text>
 				<mj-button background-color="#203a3b" href="https://act.ewg.org/nrfMs7W5QU6qMaHkaV4lMg2?sourceid=1023696&utm_source=newsletter&utm_campaign=202602FebNews7&utm_medium=email&utm_content=default&nvep=&hmac=&emci=c973bf0e-bd0d-f111-a69a-000d3a57593f&emdi=ea000000-0000-0000-0000-000000000001&ceid=" width="154px">Read More</mj-button>
@@ -333,16 +333,16 @@
 		<!-- Anniversary section -->
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/e3fe1bff9a3f0985d65823a17dd40c35.jpg" padding="32px">
 			<mj-column width="576px">
-				<mj-text mj-class="h3 white" align="left" padding-bottom="16px">
+				<mj-text mj-class="h3 white" css-class="text-h3" align="left" padding-bottom="16px">
 					<p>EWG'S 30TH ANNIVERSARY</p>
 				</mj-text>
-				<mj-text mj-class="body white" align="left" padding-bottom="16px">
+				<mj-text mj-class="body white" css-class="text-body" align="left" padding-bottom="16px">
 					<p>EWG is celebrating 30 years of helping you to protect your health and environment. Individuals like you account for more than half of EWG's revenue and are essential to our success. <a href="https://act.ewg.org/O6Wq1SkLXEam4cmOkmwkyA2?sourceid=1022286&utm_source=newsletter&utm_campaign=202401Newsletter8&utm_medium=email&utm_content=default&nvep=&hmac=&emci=e14c20b5-bd0d-f111-a69a-000d3a57593f&emdi=ea000000-0000-0000-0000-000000000001&ceid=" class="link-green" target="_blank">Help us celebrate this anniversary and fund the work you count on with a donation today.</a></p>
 				</mj-text>
-				<mj-text mj-class="body green" align="left" font-weight="700" padding-bottom="16px">
+				<mj-text mj-class="body green" css-class="text-body" align="left" font-weight="700" padding-bottom="16px">
 					<p>CAN WE COUNT ON YOU TO JOIN OUR COMMUNITY OF OVER 400,000 SUPPORTERS TODAY?</p>
 				</mj-text>
-				<mj-text mj-class="body white" align="left" padding-bottom="16px">
+				<mj-text mj-class="body white" css-class="text-body" align="left" padding-bottom="16px">
 					<p>Any amount makes a difference.</p>
 				</mj-text>
 				<mj-spacer height="8px" padding-bottom="16px"></mj-spacer>
@@ -353,7 +353,7 @@
 		<!-- Tagline banner -->
 		<mj-section background-color="#009a4f" padding="16px 32px">
 			<mj-column width="576px">
-				<mj-text mj-class="body-lg centered white" font-weight="700" text-transform="uppercase">
+				<mj-text mj-class="body-lg centered white" css-class="text-body-lg" font-weight="700" text-transform="uppercase">
 					<p>Know your environment. <br/>Protect your health.</p>
 				</mj-text>
 			</mj-column>
