@@ -1,0 +1,12 @@
+{
+  "name": "ewg-email-template",
+  "private": true,
+  "scripts": {
+    "build": "mjml index.mjml -o index.html && mjml index-simple.mjml -o index-simple.html",
+    "validate": "mjml --validate index.mjml; mjml --validate index-simple.mjml",
+    "serve": "node serve.js"
+  },
+  "devDependencies": {
+    "mjml": "^4.18.0"
+  }
+}
