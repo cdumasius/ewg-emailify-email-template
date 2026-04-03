@@ -6,15 +6,11 @@
 Run `npm install` to install MJML.
 
 ### Scripts
-- `npm run build` — compile all `.mjml` files to `.html`
 - `npm run validate` — validate all `.mjml` files
-- `npm run serve` — start preview server at `http://localhost:3000` with file watching
+- `npm run serve` — start preview server with file watching
 
 ### Preview in Claude Code
 The preview server is registered in `.claude/launch.json`. Use `preview_start` with name `mjml-preview` to launch it. The server compiles MJML on startup, validates, and recompiles when `.mjml` files change.
-
-### HTML output
-Always run `npm run build` before committing to keep `.html` files in sync with `.mjml` sources.
 
 ## Comparison Screenshots
 
