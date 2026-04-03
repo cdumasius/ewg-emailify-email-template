@@ -5,8 +5,8 @@ const { execSync } = require("child_process");
 
 const PORT = process.env.PORT || 3000;
 const MJML_FILES = [
-  { src: "index.mjml", out: "index-emailify.html" },
-  { src: "index-simple.mjml", out: "index.html" },
+  { src: "index.mjml", out: "index.html" },
+  { src: "index-emailify.mjml", out: "index-emailify.html" },
 ];
 
 function compile(entry) {
