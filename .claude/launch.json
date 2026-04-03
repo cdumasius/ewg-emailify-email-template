@@ -3,9 +3,10 @@
   "configurations": [
     {
       "name": "mjml-preview",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "serve"],
-      "port": 3000
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["serve.js"],
+      "port": 3000,
+      "autoPort": true
     }
   ]
 }
