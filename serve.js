@@ -4,44 +4,46 @@ const path = require("path");
 const { execSync } = require("child_process");
 
 const PORT = process.env.PORT || 3000;
-const MJML_FILES = ["index.mjml", "index-simple.mjml"];
+const MJML_FILES = [
+  { src: "index.mjml", out: "index-emailify.html" },
+  { src: "index-simple.mjml", out: "index.html" },
+];
 
-function compile(mjmlFile) {
-  const htmlFile = mjmlFile.replace(".mjml", ".html");
+function compile(entry) {
+  const { src, out } = entry;
   try {
     const result = execSync(
-      `npx mjml --validate "${mjmlFile}" 2>&1`
+      `npx mjml --validate "${src}" 2>&1`
     ).toString();
     if (result.trim()) {
-      console.log(`⚠  ${mjmlFile} validation:\n${result}`);
+      console.log(`⚠  ${src} validation:\n${result}`);
     } else {
-      console.log(`✓  ${mjmlFile} valid`);
+      console.log(`✓  ${src} valid`);
     }
   } catch (e) {
-    console.error(`✗  ${mjmlFile} validation errors:\n${e.stdout?.toString() || e.message}`);
+    console.error(`✗  ${src} validation errors:\n${e.stdout?.toString() || e.message}`);
   }
   try {
-    execSync(`npx mjml "${mjmlFile}" -o "${htmlFile}"`);
-    console.log(`✓  ${mjmlFile} → ${htmlFile}`);
+    execSync(`npx mjml "${src}" -o "${out}"`);
+    console.log(`✓  ${src} → ${out}`);
   } catch (e) {
-    console.error(`✗  Failed to compile ${mjmlFile}:\n${e.message}`);
+    console.error(`✗  Failed to compile ${src}:\n${e.message}`);
   }
 }
 
 function compileAll() {
   console.log("\n--- Compiling MJML ---");
-  for (const f of MJML_FILES) {
-    if (fs.existsSync(f)) compile(f);
+  for (const entry of MJML_FILES) {
+    if (fs.existsSync(entry.src)) compile(entry);
   }
   console.log("");
 }
 
 // Index page listing available templates
 function indexPage() {
-  const links = MJML_FILES.map((f) => {
-    const html = f.replace(".mjml", ".html");
-    if (!fs.existsSync(html)) return "";
-    return `<li><a href="/${html}">${f}</a></li>`;
+  const links = MJML_FILES.map((entry) => {
+    if (!fs.existsSync(entry.out)) return "";
+    return `<li><a href="/${entry.out}">${entry.src}</a></li>`;
   })
     .filter(Boolean)
     .join("\n        ");
@@ -72,11 +74,11 @@ function indexPage() {
 compileAll();
 
 // Watch for changes
-for (const f of MJML_FILES) {
-  if (!fs.existsSync(f)) continue;
-  fs.watchFile(f, { interval: 500 }, () => {
-    console.log(`♻  ${f} changed`);
-    compile(f);
+for (const entry of MJML_FILES) {
+  if (!fs.existsSync(entry.src)) continue;
+  fs.watchFile(entry.src, { interval: 500 }, () => {
+    console.log(`♻  ${entry.src} changed`);
+    compile(entry);
   });
 }
 
@@ -120,5 +122,5 @@ const server = http.createServer((req, res) => {
 
 server.listen(PORT, () => {
   console.log(`🚀 Preview server running at http://localhost:${PORT}`);
-  console.log(`   Watching: ${MJML_FILES.join(", ")}\n`);
+  console.log(`   Watching: ${MJML_FILES.map(e => e.src).join(", ")}\n`);
 });
