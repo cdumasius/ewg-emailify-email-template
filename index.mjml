@@ -127,10 +127,10 @@
 		</mj-raw>
 	</mj-head>
 
-	<!-- Note: #fffffe (not #ffffff) is used intentionally to prevent dark mode auto-inversion in some email clients -->
 	<mj-body background-color="#dbe8e4" width="640px">
+		<mj-raw><!-- Note: #fffffe (not #ffffff) is used intentionally to prevent dark mode auto-inversion in some email clients --></mj-raw>
 
-		<!-- Preheader logos -->
+		<mj-raw><!-- Preheader logos --></mj-raw>
 		<mj-section background-color="#ebebeb" padding="8px 16px 0px 16px">
 			<mj-column width="608px">
 				<mj-image alt="" src="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/75f1a62ba9e0e0df84f68a18781f1345.png" width="73px"></mj-image>
@@ -142,7 +142,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Intro text + CTA -->
+		<mj-raw><!-- Intro text + CTA --></mj-raw>
 		<mj-section background-color="#fffffe" padding="32px" text-align="center">
 			<mj-column background-color="#fffffe" vertical-align="top" width="576px">
 				<mj-text mj-class="body centered" css-class="text-body" padding-bottom="32px">
@@ -154,7 +154,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Card: image top, dark bg content -->
+		<mj-raw><!-- Card: image top, dark bg content --></mj-raw>
 		<mj-wrapper background-color="#fffffe" padding="16px 0px" text-align="center">
 			<mj-section background-color="#fffffe" padding="0">
 				<mj-column width="640px" padding="0">
@@ -176,7 +176,7 @@
 			</mj-section>
 		</mj-wrapper>
 
-		<!-- Card: dark bg content, image bottom -->
+		<mj-raw><!-- Card: dark bg content, image bottom --></mj-raw>
 		<mj-wrapper background-color="#fffffe" padding="16px 0px" text-align="center">
 			<mj-section background-color="#203a3b" padding="16px 20px">
 				<mj-column padding="0px 0px 38px 0px" width="600px">
@@ -198,7 +198,7 @@
 			</mj-section>
 		</mj-wrapper>
 
-		<!-- Card: dark bg with Yes/No buttons, image bottom -->
+		<mj-raw><!-- Card: dark bg with Yes/No buttons, image bottom --></mj-raw>
 		<mj-wrapper background-color="#fffffe" padding="16px 0px" text-align="center">
 			<mj-section background-color="#203a3b" padding="16px 20px">
 				<mj-column width="600px">
@@ -234,7 +234,7 @@
 			</mj-section>
 		</mj-wrapper>
 
-		<!-- Hero: background image with centered content -->
+		<mj-raw><!-- Hero: background image with centered content --></mj-raw>
 		<mj-section css-class="hero-1" background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/90854d9bf2800356b1fbefd385fdfa96.jpg" padding="48px 0px 260px 0px" text-align="center">
 			<mj-column vertical-align="top" width="100%" padding="24px">
 				<mj-text mj-class="kicker centered black" css-class="text-kicker">
@@ -249,7 +249,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Two-column: text left, image right -->
+		<mj-raw><!-- Two-column: text left, image right --></mj-raw>
 		<mj-section background-color="#fffffe" padding="16px 0px">
 			<mj-column width="320px" padding="24px">
 				<mj-text mj-class="kicker green" css-class="text-kicker mobile-center" align="left" padding-bottom="8px">
@@ -272,7 +272,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Hero: background image, content left -->
+		<mj-raw><!-- Hero: background image, content left --></mj-raw>
 		<mj-section css-class="hero-2" background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/f3ab6181347f22cd31c1b3a1ac2ef85d.jpg" padding="160px 0px">
 			<mj-column width="50%" padding="24px">
 				<mj-text mj-class="kicker" css-class="text-kicker" align="left">
@@ -289,7 +289,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Hero: background image, content left (variant) -->
+		<mj-raw><!-- Hero: background image, content left (variant) --></mj-raw>
 		<mj-section css-class="hero-3" background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/f3ab6181347f22cd31c1b3a1ac2ef85d.jpg" padding="30px 0px 290px 0px">
 			<mj-column vertical-align="top" width="50%" padding="24px">
 				<mj-text mj-class="kicker green" css-class="text-kicker" align="left">
@@ -306,7 +306,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Hero: background image wrapper with Yes/No buttons -->
+		<mj-raw><!-- Hero: background image wrapper with Yes/No buttons --></mj-raw>
 		<mj-wrapper css-class="hero-wrapper" background-color="#fffffe" background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/04cdcdb871872ef6d1a4414d337d0df7.jpg" background-size="cover" background-repeat="no-repeat" background-position="center center" padding="316px 0px 16px 0px" text-align="center">
 			<mj-section padding="16px 20px">
 				<mj-column width="600px">
@@ -334,7 +334,7 @@
 			</mj-section>
 		</mj-wrapper>
 
-		<!-- Hero: background image, centered headline + CTA -->
+		<mj-raw><!-- Hero: background image, centered headline + CTA --></mj-raw>
 		<mj-section css-class="hero-4" background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/5875a0c66fa6021a789bfa45c2559390.jpg" padding="16px 0px 380px 0px" text-align="center">
 			<mj-column vertical-align="top" width="100%" padding="24px">
 				<mj-text mj-class="h3 centered" css-class="text-h3" font-size="30px" padding-bottom="24px">
@@ -344,7 +344,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Anniversary section -->
+		<mj-raw><!-- Anniversary section --></mj-raw>
 		<mj-section background-url="https://prod.cdn.everyaction.com/images/van/EWG/EWG/1/71381/images/emailify/e3fe1bff9a3f0985d65823a17dd40c35.jpg" padding="32px">
 			<mj-column width="576px">
 				<mj-text mj-class="h3 white" css-class="text-h3" align="left" padding-bottom="16px">
@@ -364,7 +364,7 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- Tagline banner -->
+		<mj-raw><!-- Tagline banner --></mj-raw>
 		<mj-section background-color="#009a4f" padding="16px 32px">
 			<mj-column width="576px">
 				<mj-text mj-class="body-lg centered white" css-class="text-body-lg" font-weight="700" text-transform="uppercase" padding-bottom="0">
@@ -373,14 +373,14 @@
 			</mj-column>
 		</mj-section>
 
-		<!-- CTA button -->
+		<mj-raw><!-- CTA button --></mj-raw>
 		<mj-section background-color="#fffffe" padding="32px 16px">
 			<mj-column width="608px">
 				<mj-button font-size="13px" letter-spacing="3px" href="https://act.ewg.org/onlineactions/O6Wq1SkLXEam4cmOkmwkyA2?sourceid=1023696&utm_source=newsletter&utm_campaign=202602FebNews7&utm_medium=email&utm_content=default&nvep=&hmac=&emci=c973bf0e-bd0d-f111-a69a-000d3a57593f&emdi=ea000000-0000-0000-0000-000000000001&ceid=" inner-padding="25px 0px" width="195px">Learn More</mj-button>
 			</mj-column>
 		</mj-section>
 
-		<!-- Footer -->
+		<mj-raw><!-- Footer --></mj-raw>
 		<mj-section background-color="#ebebeb" padding="32px">
 			<mj-column width="576px">
 				<mj-text mj-class="footer" font-weight="700">
