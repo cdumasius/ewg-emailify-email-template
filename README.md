@@ -4,7 +4,6 @@ This repository contains the MJML and HTML code, exported from Figma, for EWG's 
 
 ## Files
 - `index.mjml`: The MJML code for the email template.
-- `index.html`: The HTML code generated from the MJML file.
 - `img/`: A folder containing any images used in the email template.
 
 ## Usage
