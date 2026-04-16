@@ -1,6 +1,10 @@
 <mjml lang="en">
   <mj-head>
     <mj-title>EWG</mj-title>
+    <mj-font
+      name="Open Sans"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700"
+    />
     <mj-preview>EDIT: Preview text goes here</mj-preview>
     <mj-breakpoint width="660px" />
 
@@ -9,7 +13,12 @@
       <mj-body background-color="#ebebeb" width="640px" />
       <mj-section padding="0" />
       <mj-column padding="0" />
-      <mj-text color="#000000" font-size="15px" line-height="23px" padding="0" />
+      <mj-text
+        color="#000000"
+        font-size="15px"
+        line-height="23px"
+        padding="0"
+      />
       <mj-image padding="0" align="center" />
       <mj-button
         background-color="#009A4F"
@@ -17,36 +26,25 @@
         border-radius="0px"
         font-size="13px"
         font-weight="400"
-        inner-padding="18px 0"
+        inner-padding="20px 0"
         letter-spacing="3px"
         padding="0"
       />
     </mj-attributes>
 
     <mj-style>
-      p { margin: 8px 0; }
-      a { text-decoration: none; }
-
-      .footer a {
-        color: #000000;
-        text-decoration: none;
-      }
-
-      .footer-strong a {
-        color: #000000;
-        text-decoration: none;
-        font-weight: 700;
-      }
+      p { margin: 8px 0; } a { text-decoration: none; } .footer a { color:
+      #000000; text-decoration: none; } .footer-strong a { color: #000000;
+      text-decoration: none; font-weight: 700; }
     </mj-style>
 
     <mj-raw>
-      <meta name="format-detection" content="telephone=no">
-      <meta name="x-apple-disable-message-reformatting">
+      <meta name="format-detection" content="telephone=no" />
+      <meta name="x-apple-disable-message-reformatting" />
     </mj-raw>
   </mj-head>
 
   <mj-body background-color="#ebebeb" width="640px">
-
     <!-- ================= HEADER ================= -->
 
     <mj-section background-color="#ebebeb" padding="10px 0 0 0">
@@ -81,7 +79,10 @@
       <mj-column>
         <mj-text align="center">
           {{FirstName or 'Friend'}}, EDIT: Add intro copy here.
-          <a href="https://www.ewg.org/" style="color:#009A4F; font-weight:700; text-decoration:none;">
+          <a
+            href="https://www.ewg.org/"
+            style="color: #009a4f; font-weight: 700; text-decoration: none"
+          >
             Example inline link
           </a>
         </mj-text>
@@ -92,6 +93,7 @@
     <!-- ================= IMAGE BLOCK TEMPLATE ================= -->
     <!-- DUPLICATE THIS SECTION FOR EACH IMAGE -->
     <!-- REQUIRED: Update LINK (href), IMAGE (src), and ALT TEXT -->
+    <!-- Alt text should clearly describe the image or CTA (not "image") -->
     <!-- IMPORTANT: Images should ALWAYS be clickable -->
 
     <mj-section background-color="#ffffff" padding="10px 0">
@@ -112,7 +114,10 @@
         <mj-spacer height="23px" />
         <mj-text align="center">
           EDIT: Add body copy here.
-          <a href="https://www.ewg.org/" style="color:#009A4F; font-weight:700; text-decoration:none;">
+          <a
+            href="https://www.ewg.org/"
+            style="color: #009a4f; font-weight: 700; text-decoration: none"
+          >
             Example inline link
           </a>
         </mj-text>
@@ -123,6 +128,7 @@
     <!-- ================= IMAGE BLOCK TEMPLATE ================= -->
     <!-- DUPLICATE THIS SECTION FOR EACH IMAGE -->
     <!-- REQUIRED: Update LINK (href), IMAGE (src), and ALT TEXT -->
+    <!-- Alt text should clearly describe the image or CTA (not "image") -->
     <!-- IMPORTANT: Images should ALWAYS be clickable -->
 
     <mj-section background-color="#ffffff" padding="10px 0">
@@ -143,7 +149,10 @@
         <mj-spacer height="23px" />
         <mj-text align="center">
           EDIT: Add body copy here.
-          <a href="https://www.ewg.org/" style="color:#009A4F; font-weight:700; text-decoration:none;">
+          <a
+            href="https://www.ewg.org/"
+            style="color: #009a4f; font-weight: 700; text-decoration: none"
+          >
             Example inline link
           </a>
         </mj-text>
@@ -154,6 +163,7 @@
     <!-- ================= IMAGE BLOCK TEMPLATE ================= -->
     <!-- DUPLICATE THIS SECTION FOR EACH IMAGE -->
     <!-- REQUIRED: Update LINK (href), IMAGE (src), and ALT TEXT -->
+    <!-- Alt text should clearly describe the image or CTA (not "image") -->
     <!-- IMPORTANT: Images should ALWAYS be clickable -->
 
     <mj-section background-color="#ffffff" padding="10px 0">
@@ -174,7 +184,10 @@
         <mj-spacer height="23px" />
         <mj-text align="center">
           EDIT: Add body copy here.
-          <a href="https://www.ewg.org/" style="color:#009A4F; font-weight:700; text-decoration:none;">
+          <a
+            href="https://www.ewg.org/"
+            style="color: #009a4f; font-weight: 700; text-decoration: none"
+          >
             Example inline link
           </a>
         </mj-text>
@@ -185,6 +198,7 @@
     <!-- ================= IMAGE BLOCK TEMPLATE ================= -->
     <!-- DUPLICATE THIS SECTION FOR EACH IMAGE -->
     <!-- REQUIRED: Update LINK (href), IMAGE (src), and ALT TEXT -->
+    <!-- Alt text should clearly describe the image or CTA (not "image") -->
     <!-- IMPORTANT: Images should ALWAYS be clickable -->
 
     <mj-section background-color="#ffffff" padding="10px 0">
@@ -206,7 +220,10 @@
         <mj-spacer height="23px" />
         <mj-text align="center">
           EDIT: Add donation or CTA copy here.
-          <a href="https://www.ewg.org/" style="color:#009A4F; font-weight:700; text-decoration:none;">
+          <a
+            href="https://www.ewg.org/"
+            style="color: #009a4f; font-weight: 700; text-decoration: none"
+          >
             Example CTA link
           </a>
         </mj-text>
@@ -239,7 +256,6 @@
           href="https://www.ewg.org/"
           width="220px"
           font-size="14px"
-          inner-padding="20px 0"
           letter-spacing="2px"
         >
           DONATE NOW
@@ -251,7 +267,12 @@
 
     <mj-section background-color="#009A4F" padding="14px 0">
       <mj-column>
-        <mj-text align="center" color="#ffffff" font-size="24px" line-height="30px">
+        <mj-text
+          align="center"
+          color="#ffffff"
+          font-size="24px"
+          line-height="30px"
+        >
           Know your environment. Protect your health.
         </mj-text>
       </mj-column>
@@ -261,10 +282,15 @@
 
     <mj-section background-color="#ebebeb" padding="30px 20px 0 20px">
       <mj-column>
-
-        <mj-text align="center" font-size="12px" css-class="footer footer-strong">
+        <mj-text
+          align="center"
+          font-size="12px"
+          css-class="footer footer-strong"
+        >
           <a href="{{UnsubscribeUrl}}">UNSUBSCRIBE</a> |
-          <a href="https://act.ewg.org/a/ewg-supporter-portal?secureToken={{SecureToken}}">
+          <a
+            href="https://act.ewg.org/a/ewg-supporter-portal?secureToken={{SecureToken}}"
+          >
             MANAGE PREFERENCES
           </a>
         </mj-text>
@@ -276,9 +302,16 @@
           <a href="https://www.ewg.org/">ewg.org</a>
         </mj-text>
 
-        <mj-text align="center" font-size="12px" css-class="footer footer-strong">
-          <a href="http://www.ewg.org/support-our-work/ways-to-donate/stay-touch">Contact Us</a> |
-          <a href="http://www.ewg.org/about/privacy">Privacy Policy</a> |
+        <mj-text
+          align="center"
+          font-size="12px"
+          css-class="footer footer-strong"
+        >
+          <a
+            href="http://www.ewg.org/support-our-work/ways-to-donate/stay-touch"
+            >Contact Us</a
+          >
+          | <a href="http://www.ewg.org/about/privacy">Privacy Policy</a> |
           <a href="http://www.ewg.org/disclaimer">Terms &amp; Conditions</a> |
           Copyright © 2026, EWG. All Rights Reserved.
         </mj-text>
@@ -286,6 +319,5 @@
         <mj-spacer height="16px" />
       </mj-column>
     </mj-section>
-
   </mj-body>
 </mjml>
